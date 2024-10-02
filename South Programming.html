@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+			
+	</head>
+	<header>
 	<title> South Programming </title>
 		<style>
 		 *{
@@ -13,10 +19,22 @@
 
 		.header {
 			background-color: #e28e36;
+			background-clip: padding-box;
+			border-radius: 0.7rcap;
+			font-family: "Inter Tight", sans-serif;
+			display: flex;
+			flex-flow: row;
+		// if you can somehow center this then space the title and menu buttons left SPACE right with some padding that would be nice
+			
+		}
+
+		.title {
 			padding: 12px;
 			text-align: center;
 			color: white;
-			font-size: 30px; 
+  			font-weight: 200;
+			font-size: larger; 
+			
 		}
 
 		ul {
@@ -24,7 +42,11 @@
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
-			background-color: #333;
+			background-color: #f7f7f741;
+  			font-weight: 400;
+			font-size: small; 
+			clip: rect();
+			border-radius: 1rcap;
 		}
 
 		li {
@@ -40,7 +62,7 @@
 		}
 
 		li a, .dropbtn {
-			display: inline-block;
+
 			color: white;
 			text-align: center;
 			padding: 14px 16px;
@@ -48,7 +70,7 @@
 		}
 
 		li a:hover, .dropdown:hover .dropbtn {
-		  	background-color: gray;
+		  	background-color: #b6732b;
 		}
 
 		li.dropdown {
@@ -84,26 +106,26 @@
 			padding: 15px;
 		}
 
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
 
 		</style>
-	</head>
+	</header>
 	<body>
 
-	<ul>
-	  <li><a href="South%20Programming.html">Menu</a></li>
-	  <li><a href="Programming%20Events.html">Events </a></li>
-	  <li><a href="">About Us</a></li>
-	</ul>
-
-	<div class="header">
-	  <h1> South Programming Club </h1>
+	<div class="header">	
+			<div class="title">
+			<h1> South Programming Club </h1>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="South%20Programming.html">Home</a></li>
+				<li><a href="Programming%20Events.html">Events</a></li>
+				<li><a href="https://instagram.com/">Instagram</a></li>
+				<li><a href="https://discord.com/">Discord</a></li>
+			</ul>
+		</div>
+	
+		
 	</div>
-
 	<div class="row">
 	  <div class="column">
 		<h2>About Us</h2>
@@ -111,7 +133,8 @@
 	  </div>
 	  
 	  <div class="column">
-		<h2>Contacts</h2>
+		// we could list upcoming events and have a learn more button, lets have the home page overall just show a preview of the rest of the site, ill send a sketch later at home 
+		<h2>Upcoming Events</h2>
 	  </div>
 	  
 	</div>
