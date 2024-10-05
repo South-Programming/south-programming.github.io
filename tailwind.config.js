@@ -14,7 +14,12 @@ module.exports = {
         'monospace'
       ]
     },
-    extend: {},
+   
+    extend: {
+      colors: {
+        'mango': '#f3ae23'
+      }
+    },
   },
   plugins: [],
 }
