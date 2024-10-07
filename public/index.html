@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - South Programming</title>
+
+        <link rel="stylesheet" href="output.css">
+        <style>
+            body::-webkit-scrollbar {
+                display: none;
+            }
+            body{
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="fixed top-0 z-40 flex justify-center sm:justify-end gap-12 p-4 sm:pr-12 w-full font-mono text-white bg-gradient-to-r from-mango to-amber-600">
+            <a href="#" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
+                /ABOUT
+            </a>
+            <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
+                /EVENTS
+            </a>
+        </nav>
+        <!-- hero button
+        <div class="fixed h-screen w-screen">
+            <div class="z-50 relative transition-all w-10 h-10 ease-linear hover:-translate-y-12 hover:cursor-pointer">
+                <a href="#main" class="text-2xl text-white font-mono">↓</a>
+            </div>
+        </div> -->
+        <!-- hero -->
+        <header class="h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center pt-12 text-white bg-gradient-to-r from-mango to-amber-600">
+            <!-- hero text -->
+            <div class="p-4 sm:p-8 lg:p-12 xl:p-16"> 
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-mono">SOUTH/</h1>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">PROGRAMMING</h1>
+            </div>
+        </header>
+        <main id="main" class="w-full sm:w-[640px] p-6 mx-auto font-sans bg-white flex flex-col justify-center">
+            <!-- next meeting -->
+            <div class="group mb-2 flex flex-col justify-between sm:flex-row transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-mango hover:bg-opacity-30">
+                <h2 class="p-4 text-3xl text-center sm:text-start font-bold group-hover:bg-opacity-30">Next Meeting</h2>
+                <p class="grow h-full p-4 text-3xl bg-gray-50 bg-opacity-70 text-center rounded-r-lg font-mono">October 16th, 2024</p>
+            </div>
+            <!-- cards -->
+            <div class="mt-2 flex flex-col sm:flex-row gap-4">
+                <!-- who we are -->
+                <div class="group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-mango hover:bg-opacity-30">
+                    <div class="p-4 text-3xl">
+                        <h1 class="font-bold">About</h1>
+                    </div>
+                    
+                    <p class="p-4 flex-grow bg-gray-50 bg-opacity-70">At Burnaby South Programming Club, we host biweekly meetings on Wednesdays @ E133. At these meetings you can talk to people with a shared passion in programming, learn about events and oppritunities, and more. We welcome people of all experience levels. We also host monthly jams, where you can build projects with a theme which you can improve your skills with.</p>
+                </div>
+                <div class="group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-mango hover:bg-opacity-30">
+                    <h1 class="p-4 text-3xl font-bold">Events</h1>
+                    <p class="p-4 flex-grow bg-gray-50 bg-opacity-70">no events rn dawg</p>
+                </div>
+                <!-- <div class="my-4 transition-all  md:break-before-column break-before-right  rounded-lg hover:shadow-md">  
+                    <div class="group bg-gray-200 rounded-lg hover:bg-mango hover:bg-opacity-30">
+                        <a href="/public/events.html">
+                            <div class="flex flex-row items-center">
+                                <h1 class="p-4 text-3xl font-bold">Events</h1>
+                                    <p class="justify-right text-3xl font-icons text-orange-400 opacity-0 group-hover:opacity-60 transition-all">arrow_forward</p>
+                            </div>
+                        </a>
+
+                        <div class="bg-gray-50 bg-opacity-70 p-4 rounded-b-lg">
+                        <p>no events rn dawg</p>
+                        MAKE EVENT CARD, i can maybe hop on figma later and rough one out - omar :)
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
