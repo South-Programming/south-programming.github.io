@@ -10,13 +10,22 @@
             body::-webkit-scrollbar {
                 display: none;
             }
-            body{
+            body {
                 -ms-overflow-style: none;
                 scrollbar-width: none;
             }
+
+            /* Parallax CSS */
+            .parallax-header {
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                height: 100vh; /* Full screen */
+                z-index: 10; /* Ensure it's stacked properly */
+            }
         </style>
     </head>
-    <body>
+    <body class="bg-gradient-to-br from-[#A6A6A6] from-[8%] via-[#5E5E5E] via-[41%] to-[#151515]">
         <!-- navbar -->
         <nav class="fixed top-0 z-40 flex justify-center sm:justify-end gap-12 p-4 sm:pr-12 w-full font-mono text-white bg-gradient-to-r from-mango to-amber-600">
             <a href="#" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
@@ -33,14 +42,14 @@
             </div>
         </div> -->
         <!-- hero -->
-        <header class="h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center pt-12 text-white bg-gradient-to-r from-mango to-amber-600">
+        <header class="z-10 parallax-header bg-fixed h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center pt-12 text-white bg-gradient-to-br from-mango to-amber-600">
             <!-- hero text -->
             <div class="p-4 sm:p-8 lg:p-12 xl:p-16"> 
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-mono">SOUTH/</h1>
                 <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">PROGRAMMING</h1>
             </div>
         </header>
-        <main id="main" class="w-full sm:w-[640px] p-6 mx-auto font-sans bg-white flex flex-col justify-center">
+        <main id="main" class="z-50 w-full sm:w-[640px] p-6 mx-auto font-sans flex flex-col justify-center" style="margin-top: 6rem;">
             <!-- next meeting -->
             <div class="group mb-2 flex flex-col justify-between sm:flex-row transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-mango hover:bg-opacity-30">
                 <h2 class="p-4 text-3xl text-center sm:text-start font-bold group-hover:bg-opacity-30">Next Meeting</h2>
@@ -81,5 +90,6 @@
         <footer>
 
         </footer>
+        <script src="/src/content.js" defer></script>
     </body>
 </html>
