@@ -40,26 +40,41 @@
                 <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">PROGRAMMING</h1>
             </div>
         </header>
-        <main id="main" class="w-full md:w-[768px] mx-auto font-sans bg-white flex flex-col justify-center">
+        <main id="main" class="w-full sm:w-[640px] p-6 mx-auto font-sans bg-white flex flex-col justify-center">
             <!-- next meeting -->
-            <div class="transition-all break-after-column rounded-lg hover:shadow-md">
-                <div class="bg-gray-100 rounded-lg hover:bg-mango hover:bg-opacity-30 flex flex-auto grid-flow-row content-center">
-                    <h2 class=" bg-gray-200 bg-opacity-50 rounded-l-lg text-3xl font-bold p-4">Next Meeting</h2>
-                    <p class="text-3xl p-2 m-auto">October 16th, 2024</p>
-                </div>
+            <div class="group mb-2 flex flex-col justify-between sm:flex-row transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-mango hover:bg-opacity-30">
+                <h2 class="p-4 text-3xl text-center sm:text-start font-bold group-hover:bg-opacity-30">Next Meeting</h2>
+                <p class="grow h-full p-4 text-3xl bg-gray-50 bg-opacity-70 text-center rounded-r-lg font-mono">October 16th, 2024</p>
             </div>
             <!-- cards -->
-            <div class="h-[1000rem] columns-1 md:columns-2 p-6 m-6">
+            <div class="mt-2 flex flex-col sm:flex-row gap-4">
                 <!-- who we are -->
-                <div class="transition-all break-after-column rounded-lg hover:shadow-md">  
-                    <div class="bg-gray-200 rounded-lg hover:bg-mango hover:bg-opacity-30">
-                        <h1 class="p-4 text-3xl font-bold">Who We Are</h1>
-                        <p class="text-base bg-gray-50 bg-opacity-70 p-4 rounded-b-lg">At Burnaby South Programming Club, we host biweekly meetings on Wednesdays @ E133. At these meetings you can talk with like-minded people with a shared passion in programming, learn about events and oppritunities, and more. We welcome people of all experience levels. We also host monthly jams, where you can build projects with a theme which you can improve your skills with.</p>
-                        
+                <div class="group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-mango hover:bg-opacity-30">
+                    <div class="p-4 text-3xl">
+                        <h1 class="font-bold">About</h1>
                     </div>
+                    
+                    <p class="p-4 flex-grow bg-gray-50 bg-opacity-70">At Burnaby South Programming Club, we host biweekly meetings on Wednesdays @ E133. At these meetings you can talk to people with a shared passion in programming, learn about events and oppritunities, and more. We welcome people of all experience levels. We also host monthly jams, where you can build projects with a theme which you can improve your skills with.</p>
                 </div>
-                
-                <h1 class="text-6xl font-bold font-sans pt-12 pb-3">What We Do</h1>
+                <div class="group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-mango hover:bg-opacity-30">
+                    <h1 class="p-4 text-3xl font-bold">Events</h1>
+                    <p class="p-4 flex-grow bg-gray-50 bg-opacity-70">no events rn dawg</p>
+                </div>
+                <!-- <div class="my-4 transition-all  md:break-before-column break-before-right  rounded-lg hover:shadow-md">  
+                    <div class="group bg-gray-200 rounded-lg hover:bg-mango hover:bg-opacity-30">
+                        <a href="/public/events.html">
+                            <div class="flex flex-row items-center">
+                                <h1 class="p-4 text-3xl font-bold">Events</h1>
+                                    <p class="justify-right text-3xl font-icons text-orange-400 opacity-0 group-hover:opacity-60 transition-all">arrow_forward</p>
+                            </div>
+                        </a>
+
+                        <div class="bg-gray-50 bg-opacity-70 p-4 rounded-b-lg">
+                        <p>no events rn dawg</p>
+                        MAKE EVENT CARD, i can maybe hop on figma later and rough one out - omar :)
+                        </div>
+                    </div>
+                </div> -->
                 
             </div>
         </main>
