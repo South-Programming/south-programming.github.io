@@ -12,6 +12,10 @@ module.exports = {
       'mono': [
         'JetBrains Mono',
         'monospace'
+      ],
+
+      'icon': [
+        'Material Symbols Outlined'
       ]
     },
    
