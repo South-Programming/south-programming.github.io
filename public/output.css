@@ -937,19 +937,19 @@ video {
   padding: 2rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-2{
@@ -957,9 +957,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pr-12{
@@ -982,16 +982,16 @@ video {
   text-align: start;
 }
 
+.font-icon{
+  font-family: Material Symbols Outlined;
+}
+
 .font-mono{
   font-family: JetBrains Mono, monospace;
 }
 
 .font-sans{
   font-family: Inter, sans-serif;
-}
-
-.font-icon{
-  font-family: Material Symbols Outlined;
 }
 
 .text-2xl{
