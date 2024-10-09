@@ -1302,6 +1302,11 @@ html {
   --tw-bg-opacity: 0.3;
 }
 
+.hover\:text-mango:hover{
+  --tw-text-opacity: 1;
+  color: rgb(243 174 35 / var(--tw-text-opacity));
+}
+
 .hover\:decoration-mango:hover{
   text-decoration-color: #f3ae23;
 }
