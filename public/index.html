@@ -6,17 +6,17 @@
         <title>Home - South Programming</title>
         <link rel="stylesheet" href="output.css">
     </head>
-    <body class="h-screen bg-black">
+    <body class="h-screen bg-gradient-to-r from-mango to-amber-600">
         <!-- navbar -->
         <nav class="fixed top-0 z-50 flex justify-center sm:justify-end gap-12 p-4 sm:pr-12 w-full font-mono animate-fade text-white bg-gradient-to-r from-mango to-amber-600">
             <a href="#" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
                 /ABOUT
             </a>
-            <a href="/sp-website/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
+            <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
                 /EVENTS
             </a>
             <!--Section for meeting recap / maybe a blog??-->
-            <a href="/sp-website/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
+            <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
                 /RECAP
             </a>
              <!--We can probably not add this section until we start doing projects as a collective
@@ -39,7 +39,7 @@
                 <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">PROGRAMMING</h1>
             </div>
         </header>
-        <main id="main" class="relative snap-center z-20 pt-20 h-screen w-screen p-6 mx-auto font-sans flex justify-center bg-slate-300">
+        <main id="main" class="relative snap-center z-20 pt-20 h-1/2 w-screen p-6 mx-auto font-sans flex justify-center bg-opacity-30 bg-black">
             <div class="w-full sm:w-[640px]">
                 <!-- next meeting -->
                 <div class="group mb-4 flex flex-col justify-between sm:flex-row transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-slate-400"> <!--Change hover colour to whatever and itll just overlay it on the card-->
@@ -102,6 +102,6 @@
         <footer>
 
         </footer>
-        <script src="/sp-website/src/content.js" defer></script>
+        <script src="/src/content.js" defer></script> <!--RELATIVE PATH /sp-website-->
     </body>
 </html>

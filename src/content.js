@@ -6,5 +6,6 @@ window.addEventListener('scroll', function () {
     
     // Adjust the scroll speed of the header (0.5x speed in this case)
     parallaxHeader.style.transform = `translateY(${scrolled * 0.5}px)`;
-    console.log("Parallax Loaded.")
 });
+
+console.log("Parallax Loaded.")
