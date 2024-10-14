@@ -20,20 +20,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '22'
-    - name: Find and Replace
-      uses: jacobtomlinson/gha-find-replace@v3
-      with:
-              find: "/src"
-              replace: "/sp-website/src"
-              include: "public/**"
-              regex: true
-    - name: Find and Replace
-      uses: jacobtomlinson/gha-find-replace@v3
-      with:
-              find: "/public/"
-              replace: "/sp-website/public/"
-              include: "public/**"
-              regex: true
+
     - name: Install dependencies
       run: npm install
 
