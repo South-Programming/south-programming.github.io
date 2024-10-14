@@ -921,11 +921,6 @@ video {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-mango{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 174 35 / var(--tw-bg-opacity));
-}
-
 .bg-slate-300{
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
