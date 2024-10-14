@@ -670,10 +670,6 @@ video {
   height: 0.25rem;
 }
 
-.h-1\/2{
-  height: 50%;
-}
-
 .h-10{
   height: 2.5rem;
 }
@@ -725,6 +721,10 @@ video {
 
 .min-h-96{
   min-height: 24rem;
+}
+
+.min-h-\[50\%\]{
+  min-height: 50%;
 }
 
 .min-h-fit{
@@ -1025,6 +1025,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1048,6 +1053,10 @@ video {
 
 .text-start{
   text-align: start;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .font-icon{
