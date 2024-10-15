@@ -694,6 +694,18 @@ video {
   height: 100svh;
 }
 
+.h-12{
+  height: 3rem;
+}
+
+.h-14{
+  height: 3.5rem;
+}
+
+.h-16{
+  height: 4rem;
+}
+
 .max-h-40{
   max-height: 10rem;
 }
@@ -744,8 +756,36 @@ video {
   width: 100vw;
 }
 
+.w-12{
+  width: 3rem;
+}
+
+.w-\[80\%\]{
+  width: 80%;
+}
+
+.w-\[90\%\]{
+  width: 90%;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-14{
+  width: 3.5rem;
+}
+
+.w-16{
+  width: 4rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
+}
+
+.flex-auto{
+  flex: 1 1 auto;
 }
 
 .flex-grow{
@@ -762,6 +802,10 @@ video {
 
 .origin-bottom{
   transform-origin: bottom;
+}
+
+.origin-right{
+  transform-origin: right;
 }
 
 .transform{
@@ -816,12 +860,20 @@ video {
   flex-direction: column;
 }
 
+.place-content-between{
+  place-content: space-between;
+}
+
 .place-content-evenly{
   place-content: space-evenly;
 }
 
 .content-between{
   align-content: space-between;
+}
+
+.content-around{
+  align-content: space-around;
 }
 
 .content-evenly{
@@ -890,6 +942,10 @@ video {
 
 .justify-self-end{
   justify-self: end;
+}
+
+.justify-self-stretch{
+  justify-self: stretch;
 }
 
 .rounded-lg{
@@ -985,6 +1041,19 @@ video {
   background-attachment: fixed;
 }
 
+.fill-white{
+  fill: #fff;
+}
+
+.fill-green-50{
+  fill: #f0fdf4;
+}
+
+.object-right{
+  -o-object-position: right;
+     object-position: right;
+}
+
 .p-12{
   padding: 3rem;
 }
@@ -1003,6 +1072,14 @@ video {
 
 .p-8{
   padding: 2rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-2{
@@ -1025,14 +1102,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pr-12{
@@ -1057,6 +1134,10 @@ video {
 
 .align-middle{
   vertical-align: middle;
+}
+
+.align-super{
+  vertical-align: super;
 }
 
 .font-icon{
@@ -1177,6 +1258,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-green-200{
+  --tw-text-opacity: 1;
+  color: rgb(187 247 208 / var(--tw-text-opacity));
+}
+
 .text-opacity-30{
   --tw-text-opacity: 0.3;
 }
@@ -1191,6 +1277,10 @@ video {
 
 .decoration-transparent{
   text-decoration-color: transparent;
+}
+
+.decoration-white{
+  text-decoration-color: #fff;
 }
 
 .decoration-2{
