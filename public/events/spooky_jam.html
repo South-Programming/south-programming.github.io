@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spooky Jam - South Programming</title>
-
         <link rel="stylesheet" href="/public/output.css">
+        <script src="/src/content.js" defer></script> <!--RELATIVE PATH /sp-website-->
     </head>
+
     <body class="h-screen bg-gradient-to-r from-mango to-amber-600">
     <nav class="fixed top-0 z-50 flex justify-center sm:justify-end gap-12 p-4 sm:pr-12 w-full font-mono animate-fade text-white bg-gradient-to-r from-mango to-amber-600">
         <a href="/public/index.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
@@ -43,18 +44,17 @@
     </div>
     <header class="parallax-header snap-center relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
           <div class="p-4 sm:p-8 lg:p-12 xl:p-16 animate-fade"> 
-            <h1 class="text-7xl font-mono opacity-70">EVENTS/</h1>
-            <br>
-            <div class=" flex flex-row place-content-between relative align-middle">
-                <h1 class="text-9xl font-normal">Spooky Jam</h1>
-                <img src="/src/assets/events/ghost.svg" class="aspect-auto w-24">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-mono opacity-70">EVENTS/</h1>
+            <div class=" flex flex-row gap-12 relative align-middle">
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">Spooky Jam</h1>
+                <img src="/src/assets/events/ghost.svg" class="aspect-auto w-12 sm:w-16 md:w-20 lg:w-24 xl:w-28">
             </div>
            
             <!--We also host monthly jams, where you can build projects with a theme which you can improve your skills with.-->
         </div>
     </header>
-    <main id="main" class="relative snap-center py-10 align-middle min-h-[50%] w-screen p-6 mx-auto font-sans flex justify-center bg-black bg-opacity-10">
-        <div class="flex flex-col w-screen">
+    <main id="main" class="pt-12 relative snap-center py-10 align-middle min-h-full w-screen p-6 mx-auto font-sans flex justify-center backdrop-blur-md bg-black bg-opacity-10">
+        <div class="sm:w-[640px] w-full flex flex-col">
           
             <div class="flex flex-col justify-between text-white font-mono w-full p-2 py-2">
                 <h2 class="text-xl opacity-70">DESCRIPTION</h2>
@@ -70,7 +70,7 @@
             </div>
             <h2 class="text-xl opacity-70 text-white font-mono w-full p-2 py-2">RESOURCES</h2>
             <div class="flex flex-col gap-3">
-                <div class=" bg-white bg-opacity-20 flex flex-col text-white p-6">
+                <div class="rounded-md bg-white bg-opacity-20 flex flex-col text-white p-6">
                     <h3 class="font-sans text-4xl font-normal">GitHub</h3>
                     <p class="py-2 font-mono">A cloud service to store your projects and keep track of changes you make during development. When you submit, just provide us a link to your repo.</p>
                     <div class="font-mono flex flex-row place-content-between align-middle">
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" bg-white bg-opacity-20 flex flex-col text-white p-6">
+                <div class="rounded-md bg-white bg-opacity-20 flex flex-col text-white p-6">
                     <h3 class="font-sans text-4xl font-normal">W3Schools</h3>
                     <p class="py-2 font-mono">A great reference for most languages, including Python, JavaScript, C, and more.</p>
                     <div class="font-mono flex flex-row place-content-between align-middle">
@@ -96,5 +96,4 @@
         </div>
     </main>
     </body>
-    <script src="/src/content.js" defer></script> <!--RELATIVE PATH /sp-website-->
 </html>
