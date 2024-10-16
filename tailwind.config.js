@@ -21,7 +21,9 @@ module.exports = {
    
     extend: {
       colors: {
-        'mango': '#f3ae23'
+        'mango': '#f3ae23',
+        'mango-2': '#c28b1c',
+        'mango-3': '#ae5f05'
       }
     },
     animation: {

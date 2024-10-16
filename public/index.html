@@ -12,44 +12,55 @@
             <a href="#" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
                 /ABOUT
             </a>
-            <a href="/sp-website/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
+            <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
                 /EVENTS
             </a>
             <!--Section for meeting recap / maybe a blog??-->
-            <a href="/sp-website/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
+            <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
                 /RECAP
             </a>
+            <div class="flex gap-5">
+                <a href="https://www.instagram.com/south.programming/">
+                    <img src="/src/assets/IG_Glyph.svg" alt="Instagram Link" class="h-6 aspect-square">
+                </a>
+                <a href="https://discord.gg/EamsyNHZTv">
+                    <img src="/src/assets/Discord_Glyph.svg" alt="Discord Link" class="h-6 aspect-square">
+                </a>
+            </div>
              <!--We can probably not add this section until we start doing projects as a collective
             <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
                 /PROJECTS
             </a>
             --->
         </nav>
-        <!-- hero button
-        <div class="fixed h-screen w-screen">
-            <div class="z-50 relative transition-all w-10 h-10 ease-linear hover:-translate-y-12 hover:cursor-pointer">
-                <a href="#main" class="text-2xl text-white font-mono">↓</a>
-            </div>
-        </div> -->
-        <!-- hero -->
-        <header class="parallax-header snap-center relative z-10 h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center pt-12 text-white bg-gradient-to-r from-mango to-amber-600">
+        <div class="absolute h-full w-full">
+            <!-- header buttons-->
+            <div class="absolute flex flex-row-reverse w-full z-40 p-4 sm:p-8 lg:p-12 xl:p-16 bottom-0 place-content-between animate-fade">
+                    <a href="#main" class="transition-all ease-linear duration-200 hover:pb-4 text-4xl p-3 font-icon text-white">
+                        arrow_downward</a>
+                </div>
+            </div> 
+        </div>
+
+        <header class="parallax-header snap-center relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
             <!-- hero text -->
             <div class="p-4 sm:p-8 lg:p-12 xl:p-16 animate-fade"> 
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-mono">SOUTH/</h1>
                 <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">PROGRAMMING</h1>
             </div>
+            
         </header>
-        <main id="main" class="relative snap-center z-20 pt-20 h-1/2 w-screen p-6 mx-auto font-sans flex justify-center bg-opacity-30 bg-black">
+        <main id="main" class="relative snap-center py-20 align-middle min-h-[50%] w-screen p-6 mx-auto font-sans flex justify-center bg-gradient-to-r from-mango-2 to-mango-3">
             <div class="w-full sm:w-[640px]">
                 <!-- next meeting -->
                 <div class="group mb-4 flex flex-col justify-between sm:flex-row transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-slate-400"> <!--Change hover colour to whatever and itll just overlay it on the card-->
-                    <h2 class="p-4 text-3xl text-center sm:text-start font-bold font-sans">Next Meeting</h2>
-                    <p class="grow h-full p-4 text-3xl bg-gray-50 bg-opacity-70 text-center rounded-r-lg font-sans">16.10.24</p>
+                    <h2 class="p-4 text-3xl sm:text-start font-bold font-sans">Next Meeting</h2>
+                    <p class="grow h-full p-4 text-3xl bg-gray-50 bg-opacity-70 text-center rounded-b-lg sm:rounded-l-none sm:rounded-r-lg font-sans">16.10.24</p>
                 </div>
                 <!-- cards -->
                 <div class="mt-2 flex flex-col sm:flex-row gap-4">
                     <!-- who we are -->
-                    <div class="z-20 group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-slate-400"> <!--Change hover colour to whatever and itll just overlay it on the card-->
+                    <div class=" group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-slate-400"> <!--Change hover colour to whatever and itll just overlay it on the card-->
                         <div class="p-4 text-3xl">
                             <h1 class="font-bold">About</h1>
                         </div>
@@ -57,7 +68,7 @@
                         For the About we can move the event info into the events page, like list event types and the like. 
                         -->
                         
-                        <p class="z-10 p-4 flex-grow rounded-b-lg bg-gray-50 bg-opacity-70 font-sans">We host biweekly meetings on Wednesdays at E133 where you can meet people with a shared passion in programming, learn about events, oppritunities, and more. We welcome people of all experience levels.</p>
+                        <p class=" p-4 flex-grow rounded-b-lg bg-gray-50 bg-opacity-70 font-sans">We host biweekly meetings on Wednesdays at E133 where you can meet people with a shared passion in programming, learn about events, oppritunities, and more. We welcome people of all experience levels.</p>
                     </div>
                     <div class="group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-slate-400"> <!--Change hover colour to whatever and itll just overlay it on the card-->
                         <h1 class="p-4 text-3xl font-sans font-bold">Events</h1>
@@ -102,6 +113,6 @@
         <footer>
 
         </footer>
-        <script src="/sp-website/src/content.js" defer></script> <!--RELATIVE PATH /sp-website-->
+        <script src="/src/content.js" defer></script> <!--RELATIVE PATH /sp-website-->
     </body>
 </html>
