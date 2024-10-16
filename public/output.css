@@ -1218,6 +1218,15 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-40{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .pr-12{
   padding-right: 3rem;
 }
@@ -1558,6 +1567,10 @@ html {
 
   .sm\:w-\[640px\]{
     width: 640px;
+  }
+
+  .sm\:w-\[740px\]{
+    width: 740px;
   }
 
   .sm\:flex-row{
