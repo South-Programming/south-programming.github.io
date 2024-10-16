@@ -1582,10 +1582,6 @@ html {
     width: 640px;
   }
 
-  .sm\:w-\[740px\]{
-    width: 740px;
-  }
-
   .sm\:flex-row{
     flex-direction: row;
   }
