@@ -1,7 +1,7 @@
 console.log("JavaScript is working.");
 
 // Select elements with class 'parallax-header' in both index.html and recap.html
-const parallaxHeaders = document.querySelectorAll('.parallax-header-index, .parallax-header-recap');
+const parallaxHeaders = document.querySelectorAll('.parallax-header');
 window.addEventListener('scroll', function () {
     const scrolled = window.scrollY;
 

@@ -3,12 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Events - South Programming</title>
-
+        <title>Recap - South Programming</title>
         <link rel="stylesheet" href="output.css">
+        <script src="/src/content.js" defer></script> 
     </head>
-
-    <script src="/src/content.js" defer></script> 
+    
 
     <body class="h-screen bg-gradient-to-r from-mango to-amber-600">
 
@@ -35,7 +34,17 @@
         </nav>
 
 
-        <header class="parallax-header-recap snap-center relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
+        <div class="absolute h-full w-full">
+            <!-- header buttons-->
+            <div class="absolute flex flex-row-reverse w-full z-40 p-4 sm:p-8 lg:p-12 xl:p-16 bottom-0 place-content-between animate-fade">
+                    <a href="#cards" class=" hover:pb-4 text-4xl p-3 font-icon text-white">
+                        arrow_downward</a>
+                </div>
+            </div> 
+        </div>
+
+
+        <header class="parallax-header snap-center relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
             <!-- hero text -->
             <div class="p-4 sm:p-8 lg:p-12 xl:p-16 animate-fade"> 
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold font-mono">SOUTH/</h1>
@@ -44,7 +53,7 @@
         </header>
 
 
-        <main id="cards" class="relative snap-center py-20 align-middle min-h-[50%] w-screen p-6 mx-auto font-sans flex justify-center bg-gradient-to-r from-mango-2 to-mango-3">
+        <main id="cards" class="backdrop-blur-md relative snap-center py-20 align-middle min-h-[50%] w-screen p-6 mx-auto font-sans flex justify-center bg-gradient-to-r from-mango-2 to-mango-3">
             <h1 class="font-mono text-white">COMING SOON - Missed a meeting? You'll be able to catch up on what you missed here.</h1>
         </main>
     </body>

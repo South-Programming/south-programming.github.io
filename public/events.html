@@ -8,71 +8,87 @@
         <link rel="stylesheet" href="output.css">
     </head>
     <body class="h-screen bg-gradient-to-r from-mango to-amber-600">
-    <nav class="fixed top-0 z-50 flex justify-center sm:justify-end gap-12 p-4 sm:pr-12 w-full font-mono animate-fade text-white bg-gradient-to-r from-mango to-amber-600">
-        <a href="/public/index.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
-            /ABOUT
-        </a>
-        <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
-            /EVENTS
-        </a>
-        <!--Section for meeting recap / maybe a blog??-->
-        <a href="/public/recap.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
-            /RECAP
-        </a>
-        <div class="flex gap-5">
-            <a href="https://www.instagram.com/south.programming/">
-                <img src="/src/assets/IG_Glyph.svg" alt="Instagram Link" class="h-6 aspect-square">
+        <nav class="fixed top-0 z-50 flex justify-center sm:justify-end gap-12 p-4 sm:pr-12 w-full font-mono animate-fade text-white bg-gradient-to-r from-mango to-amber-600">
+            <a href="/public/index.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
+                /ABOUT
             </a>
-            <a href="https://discord.gg/EamsyNHZTv">
-                <img src="/src/assets/Discord_Glyph.svg" alt="Discord Link" class="h-6 aspect-square">
+            <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
+                /EVENTS
             </a>
-        </div>
-         <!--We can probably not add this section until we start doing projects as a collective
-        <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
-            /PROJECTS
-        </a>
-        --->
-    </nav>
-    <div class="absolute h-full w-full">
-        <!-- header buttons-->
-        <div class="absolute flex flex-row-reverse w-full z-40 p-4 sm:p-8 lg:p-12 xl:p-16 bottom-0 place-content-between animate-fade">
-                <a href="#main" class="transition-all ease-linear duration-200 hover:pb-4 text-4xl p-3 font-icon text-white">
-                    arrow_downward</a>
+            <!--Section for meeting recap / maybe a blog??-->
+            <a href="/public/recap.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
+                /RECAP
+            </a>
+            <div class="flex gap-5">
+                <a href="https://www.instagram.com/south.programming/">
+                    <img src="/src/assets/IG_Glyph.svg" alt="Instagram Link" class="h-6 aspect-square">
+                </a>
+                <a href="https://discord.gg/EamsyNHZTv">
+                    <img src="/src/assets/Discord_Glyph.svg" alt="Discord Link" class="h-6 aspect-square">
+                </a>
             </div>
-        </div> 
-    </div>
-    <header class="parallax-header snap-center relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
-          <div class="p-4 sm:p-8 lg:p-12 xl:p-16 animate-fade"> 
-            <h1 class="text-7xl font-mono opacity-70">SOUTH_PROGRAMMING/</h1>
-            <br>
-            <h1 class="text-9xl font-normal">EVENTS</h1>
-            <!--We also host monthly jams, where you can build projects with a theme which you can improve your skills with.-->
+                <!--We can probably not add this section until we start doing projects as a collective
+            <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
+                /PROJECTS
+            </a>
+            --->
+        </nav>
+        <div class="absolute h-full w-full">
+            <!-- header buttons-->
+            <div class="absolute flex flex-row-reverse w-full z-40 p-4 sm:p-8 lg:p-12 xl:p-16 bottom-0 place-content-between animate-fade">
+                    <a href="#main" class="transition-all ease-linear duration-200 hover:pb-4 text-4xl p-3 font-icon text-white">
+                        arrow_downward</a>
+                </div>
+            </div> 
         </div>
-    </header>
-    <main id="main" class="relative snap-center py-10 align-middle w-screen p-6 mx-auto font-sans flex justify-center bg-black bg-opacity-10">
-        <div class="flex flex-col w-screen">
-            <div class="flex flex-row justify-between text-white font-mono w-full p-2 py-2">
-                <h2 class="text-xl opacity-70">ONGOING</h2>
-                <!--
-                    This would lead to a popup explaining the two ways you can submit, or could auto scroll down, or we could just put it in the event info
-                  <a href="/public/events/guide.html">Submission Guide</a>
-                  We could also have a section explaing how voting works and stuff if we decide to implement it.
-                -->
-              
+        <header class="parallax-header snap-center relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
+                <div class="p-4 sm:p-8 lg:p-12 xl:p-16 animate-fade"> 
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-mono opacity-70">SOUTH_PROGRAMMING/</h1>
+                <br>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">EVENTS</h1>
+                <!--We also host monthly jams, where you can build projects with a theme which you can improve your skills with.-->
             </div>
-            <div class=" bg-white bg-opacity-20 flex flex-col text-white p-6">
-                <h3 class="font-sans text-4xl font-normal">Spooky Jam</h3>
-                <p class="py-2 font-mono">What haunted project will you create?</p>
-                <div class="font-mono flex flex-row place-content-between">
-                    <p class="opacity-70">10.15 - 10.31</p>
-                    <br>
-                    <div>
-                        <a href="/public/events/spooky_jam.html">Learn More</a>
+        </header>
+        <main id="main" class="pt-14 backdrop-blur-md relative snap-center py-10 align-middle h-screen w-screen mx-auto font-sans flex justify-center bg-black bg-opacity-10">
+            <div class="flex flex-col gap-10 w-full sm:w-[640px]">
+                <div class="flex flex-col justify-between text-white font-mono w-full p-2 py-2 gap-2">
+                    <h2 class="text-xl opacity-70">ONGOING</h2>
+                    
+                    <!--
+                        This would lead to a popup explaining the two ways you can submit, or could auto scroll down, or we could just put it in the event info
+                        <a href="/public/events/guide.html">Submission Guide</a>
+                        We could also have a section explaing how voting works and stuff if we decide to implement it.
+                    -->
+                    <div class=" rounded-md bg-white bg-opacity-20 flex flex-col text-white p-6">
+                        <h3 class="font-sans text-4xl font-normal">Spooky Jam</h3>
+                        <p class="py-2 font-mono">What haunted project will you create?</p>
+                        <div class="font-mono flex flex-row place-content-between">
+                            <p class="opacity-70">10.15 - 10.31</p>
+                            <br>
+                            <div>
+                                <a href="/public/events/spooky_jam.html">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between text-white font-mono w-full p-2 py-2 gap-2">
+                    <h2 class="text-xl opacity-70">COMING SOON</h2>
+                    
+                    <!--
+                        Placeholder
+                    -->
+
+                    <div class=" rounded-md bg-white bg-opacity-20 flex flex-col text-white p-6">
+                        <h3 class="font-sans text-4xl font-normal">Coming Soon!</h3>
+                        <p class="py-2 font-mono">Check back at a later date to find out more!</p>
+                        <div class="font-mono flex flex-row place-content-between">
+                            <!--<p class="opacity-70">10.15 - 10.31</p>--> <!--Add back once a date is set-->
+                            <br>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
     </body>
     <script src="/src/content.js" defer></script> <!--RELATIVE PATH /sp-website-->
 </html>
