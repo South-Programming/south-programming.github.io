@@ -1218,6 +1218,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-40{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .pr-12{
   padding-right: 3rem;
 }
@@ -1228,6 +1233,10 @@ video {
 
 .pt-20{
   padding-top: 5rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .text-center{
@@ -1558,6 +1567,18 @@ html {
 
   .sm\:w-\[640px\]{
     width: 640px;
+  }
+
+  .sm\:w-\[940px\]{
+    width: 940px;
+  }
+
+  .sm\:w-\[840px\]{
+    width: 840px;
+  }
+
+  .sm\:w-\[740px\]{
+    width: 740px;
   }
 
   .sm\:flex-row{
