@@ -998,6 +998,10 @@ video {
   justify-self: stretch;
 }
 
+.scroll-smooth{
+  scroll-behavior: smooth;
+}
+
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -1447,6 +1451,14 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1459,8 +1471,26 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150{
+  transition-duration: 150ms;
+}
+
 .duration-200{
   transition-duration: 200ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .duration-700{
@@ -1486,20 +1516,12 @@ video {
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-.hover\:bg-mango:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 174 35 / var(--tw-bg-opacity));
+  scroll-behavior: smooth;
 }
 
 .hover\:bg-slate-400:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-opacity-30:hover{
-  --tw-bg-opacity: 0.3;
 }
 
 .hover\:pb-4:hover{
@@ -1527,10 +1549,6 @@ html {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.group:hover .group-hover\:opacity-60{
-  opacity: 0.6;
 }
 
 @media (min-width: 640px){
@@ -1584,11 +1602,6 @@ html {
 }
 
 @media (min-width: 768px){
-  .md\:break-before-column{
-    -moz-column-break-before: column;
-         break-before: column;
-  }
-
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
