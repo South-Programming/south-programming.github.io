@@ -1030,6 +1030,10 @@ video {
   gap: 1.25rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .place-self-start{
   place-self: start;
 }
@@ -1647,6 +1651,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.hover\:bottom-2:hover{
+  bottom: 0.5rem;
+}
+
 .hover\:scale-\[1\.02\]:hover{
   --tw-scale-x: 1.02;
   --tw-scale-y: 1.02;
@@ -1716,6 +1724,10 @@ html {
 
   .sm\:justify-end{
     justify-content: flex-end;
+  }
+
+  .sm\:gap-12{
+    gap: 3rem;
   }
 
   .sm\:rounded-l-none{
