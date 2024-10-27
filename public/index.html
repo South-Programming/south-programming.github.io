@@ -12,7 +12,6 @@
     
     <body class="h-screen bg-gradient-to-r from-mango to-amber-600">
 
-
         <!-- navbar -->
         <nav class="fixed top-0 z-50 flex justify-center sm:justify-end gap-6 sm:gap-12 p-4 sm:pr-12 w-full font-mono animate-fade text-white bg-gradient-to-r from-mango to-amber-600">
             <a href="#" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
@@ -46,76 +45,74 @@
         <!-- scroll down -->
         <div class="absolute h-full w-full">
             <div class="transition-all ease-linear duration-200 absolute z-40 p-4 sm:p-8 lg:p-12 xl:p-16 bottom-0 hover:bottom-2 right-0 place-content-between animate-fade">
-                    <a href="#cards" class="text-4xl p-3 font-icon text-white">
-                        arrow_downward</a>
-                </div>
+                <a href="#cards" class="text-4xl p-3 font-icon text-white">
+                    arrow_downward</a>
             </div> 
         </div>
 
-
-        <header class="parallax-header snap-center relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
+        <header class="parallax-header relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
             <!-- hero text -->
             <div class="p-4 sm:p-8 lg:p-12 xl:p-16 animate-fade"> 
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-mono opacity-70">SOUTH/</h1>
-                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">PROGRAMMING</h1>
+                <h1>
+                    <span class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-mono opacity-70">SOUTH/</span>
+                    <br>
+                    <span class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-sans">PROGRAMMING</span>
+                </h1>
             </div>
             
         </header>
 
+        <main id="cards" class="backdrop-blur-md relative py-20 flex content-center justify-center min-h-[50%] w-screen bg-black bg-opacity-10">
 
-        <main id="cards" class="backdrop-blur-md relative snap-center py-20 align-middle min-h-[50%] w-screen p-6 mx-auto font-sans flex justify-center bg-black bg-opacity-10">
-            <div class="w-full sm:w-[640px]">
-
-                <!-- next meeting -->
-                <div class="group mb-4 flex flex-col justify-between sm:flex-row transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-slate-400"> <!--Change hover colour to whatever and itll just overlay it on the card-->
-                    <h2 class="p-4 text-3xl sm:text-start font-bold font-sans">Next Meeting</h2>
-                    <!-- lets somehow automate this date-->
-                    <p class="grow h-full p-4 text-3xl bg-gray-50 bg-opacity-70 text-center rounded-b-lg sm:rounded-l-none sm:rounded-r-lg font-sans">30.10.24</p>
-                </div>
-
-                <!-- cards -->
-                <div class="mt-2 flex flex-col sm:flex-row gap-4">
-
-                    <!-- Who We Are Card-->
-                    <div class=" group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-slate-400"> <!--Change hover colour to whatever and itll just overlay it on the card-->
-                        <div class="p-4 text-3xl">
-                            <h1 class="font-bold">About</h1>
+            <!-- card container-->
+            <div class="px-6 flex flex-col gap-6 w-full sm:w-[640px]">
+                <!-- full width -->
+                <div class="w-full flex flex-col gap-6">
+                    <!-- next meeting -->
+                    <div class="flex flex-col gap-2">
+                        <h2 class="font-mono text-white text-xl text-opacity-70">NEXT MEETING</h2>
+                        <div class="p-6 flex flex-col rounded-md bg-white bg-opacity-20 text-white">
+                            <span class="font-sans text-4xl">10.30.24</span>
                         </div>
-                        <!--
-                        For the About we can move the event info into the events page, like list event types and the like. 
-                        -->
-                        
-                        <p class=" p-4 flex-grow rounded-b-lg bg-gray-50 bg-opacity-70 font-sans">We host bi-weekly meetings on Wednesdays at E133 where you can meet people with a shared passion in programming, learn about events, oppritunities, and more. We welcome people of all experience levels.</p>
                     </div>
-
-                    <!-- Events Card -->
-                    <div class="group flex-1 flex flex-col transition-all rounded-lg hover:shadow-md bg-gray-200 hover:bg-slate-400"> <!--Change hover colour to whatever and itll just overlay it on the card-->
-                        <h1 class="p-4 text-3xl font-sans font-bold">Events</h1>
-
-                        <!--Event Info-->
-                        <div class="p-4 flex-grow flex flex-col justify-between rounded-b-lg bg-gray-50 bg-opacity-70">
-                            <div>
-                                <h2 class="text-2xl font-sans font-medium place-self-start">To Be Annouced</h2>
-                                <p class="text-gray-600 font-sans">Check back later.</p>
-                            </div>
-                             <!--lets put some pumpkin clipart here later! :D (theres no material icon pumpkin :( ))-->
-
-                            <!-- Card Redirects -->
-                            <div class="group py-2 flex flex-row justify-between opacity-70 text-gray-500">
-
-                                <!-- Learn more Redirect -->
-                                <a class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-mango hover:underline-offset-4 hover:text-mango" href="/public/index.html">
-                                    Learn More
+                    <!-- temp card -->
+                    <!-- <div class="flex flex-col gap-2">
+                        <h2 class="font-mono text-white text-xl text-opacity-70">CARD TITLE</h2>
+                        <div class="p-6 flex flex-col rounded-md bg-white bg-opacity-20 text-white">
+                            <span class="font-sans text-4xl">CARD CONTENT</span>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- 2 columns -->
+                 <div class="w-full columns-1 sm:columns-2 gap-6">
+                    <div class="flex flex-col gap-2 py-3 break-inside-avoid-column">
+                        <h2 class="font-mono text-white text-xl text-opacity-70">ABOUT</h2>
+                        <div class="p-6 flex flex-col rounded-md bg-white bg-opacity-20 text-white">
+                            <p>
+                                We host bi-weekly meetings on Wednesdays at E133 where you can meet people with a shared passion in programming, learn about events, opportunities, and more. We welcome people of all experience levels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 py-3 break-inside-avoid-column">
+                        <h2 class="font-mono text-white text-xl text-opacity-70">EVENTS</h2>
+                        <div class="p-6 flex flex-col rounded-md bg-white bg-opacity-20 text-white">
+                            <h3 class="font-sans text-4xl">TBA</h3>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 py-3 break-inside-avoid-column">
+                        <h2 class="font-mono text-white text-xl text-opacity-70">SOCIALS</h2>
+                        <div class="p-6 flex rounded-md bg-white bg-opacity-20 text-white">
+                            <div class="flex gap-5">
+                                <a href="https://www.instagram.com/south.programming/">
+                                    <img src="/src/assets/IG_Glyph.svg" alt="Instagram Link" class="w-6 aspect-square">
                                 </a>
-
-                                <!-- Events Redirect-->
-                                <a class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-mango hover:underline-offset-4 hover:text-mango" href="/public/events.html">
-                                    All Events
+                                <a href="https://discord.gg/EamsyNHZTv">
+                                    <img src="/src/assets/Discord_Glyph.svg" alt="Discord Link" class="w-6 aspect-square">
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
+                 </div>
             </div>
             
         </main>
