@@ -72,7 +72,24 @@
                     <div class="flex flex-col gap-2">
                         <h2 class="font-mono text-white text-xl text-opacity-70">NEXT MEETING</h2>
                         <div class="p-6 flex flex-col rounded-md bg-white bg-opacity-20 text-white">
-                            <span class="font-sans text-4xl">11.06.24</span>
+                            <span id="meetingDate" class="font-mono text-4xl"></span>
+                            <script>
+                                // Get Date
+                                var now = new Date();
+
+                                // Before or After Meeting Day (Wed = 3)
+                                if (now.getDay() <= 3) {
+                                    now.setDate(now.getDate() + (7 + (3 - now.getDay())))
+                                } else {
+                                    now.setDate(now.getDate() + (7 - (now.getDay() - 3)))
+                                }
+                               
+                                // converts to string
+                                var datetime = (now.getDate() + "." + (now.getMonth() + 1) + "." + (now.getFullYear() - 2000))
+                                
+                                // Insert into HTML
+                                document.getElementById("meetingDate").innerHTML = datetime;
+                            </script>
                         </div>
                     </div>
                     <!-- temp card -->
