@@ -34,4 +34,4 @@ jobs:
         run: git remote add destination git@github.com:southclubs/programming.git
 
       - name: Push to destination
-        run: git push --mirror destination
+        run: git push --force destination
