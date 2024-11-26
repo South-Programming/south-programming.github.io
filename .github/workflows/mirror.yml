@@ -38,4 +38,4 @@ jobs:
           git merge destination/main || echo "Merge conflicts detected, skipping merge."
 
       - name: Push to destination
-        run: git push destination
+        run: git push destination main --force
