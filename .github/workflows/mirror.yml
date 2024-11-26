@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main  # Adjust branch as needed
-  schedule:
-    - cron: '0 0 * * *'  # Optional: Run daily at midnight UTC
 
 jobs:
   mirror:
@@ -15,7 +13,7 @@ jobs:
       - name: Checkout source repository
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: 'main'
 
       - name: Configure SSH for deploy key
         run: |
