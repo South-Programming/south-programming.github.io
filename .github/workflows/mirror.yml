@@ -21,6 +21,12 @@ jobs:
           echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           echo "Host github.com\n  IdentityFile ~/.ssh/deploy_key\n  StrictHostKeyChecking no" > ~/.ssh/config
+          echo "Host github.com
+          HostName github.com
+          User git
+          IdentityFile ~/.ssh/deploy_key
+          StrictHostKeyChecking no
+          LogLevel DEBUG" > ~/.ssh/config
 
       - name: Add destination as remote
         run: git remote add destination git@github.com:southclubs/programming.git
