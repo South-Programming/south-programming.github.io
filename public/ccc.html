@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#f3ae23"/>
+        <title>CCC - South Programming</title>
+        <link rel="stylesheet" href="output.css">
+        <script src="/src/content.js" defer></script> <!--RELATIVE PATH /sp-website-->
+    </head>
+
+    
+    <body class="h-screen bg-gradient-to-r from-mango to-amber-600">
+
+        
+        <nav class="fixed top-0 z-50 flex justify-center sm:justify-end gap-12 p-4 sm:pr-12 w-full font-mono animate-fade text-white bg-gradient-to-r from-mango to-amber-600">
+            <a href="/public/index.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4">
+                /ABOUT
+            </a>
+            <a href="/public/events.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> <!--RELATIVE PATH /sp-website-->
+                /EVENTS
+            </a>
+            <!--Section for meeting recap / maybe a blog??
+            <a href="/public/recap.html" class="transition-all ease-linear duration-200 decoration-transparent underline underline-offset-8 decoration-2 hover:decoration-white hover:underline-offset-4"> 
+                /RECAP
+            </a>
+            --->
+            <div class="flex gap-5">
+                <a href="https://www.instagram.com/south.programming/">
+                    <img src="/src/assets/IG_Glyph.svg" alt="Instagram Link" class="h-6 aspect-square">
+                </a>
+                <a href="https://discord.gg/EamsyNHZTv">
+                    <img src="/src/assets/Discord_Glyph.svg" alt="Discord Link" class="h-6 aspect-square">
+                </a>
+            </div>
+           
+        </nav>
+
+
+        <div class="absolute h-full w-full">
+            <!-- header buttons-->
+            <div class="absolute flex flex-row-reverse w-full z-40 p-4 sm:p-8 lg:p-12 xl:p-16 bottom-0 place-content-between animate-fade">
+                    <a href="#main" class="transition-all ease-linear duration-200 hover:pb-4 text-4xl p-3 font-icon text-white">
+                        arrow_downward</a>
+                </div>
+            </div> 
+        </div>
+
+
+        <header class="parallax-header snap-center relative h-screen min-h-40 sm:min-h-60 lg:min-h-80 xl:min-h-96 flex flex-col justify-center place-content-between pt-12 text-white ">
+                <div class="p-4 sm:p-8 lg:p-12 xl:p-16 animate-fade"> 
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-mono opacity-70">SOUTH_PROGRAMMING/</h1>
+                <br>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-normal">CCC-PREP</h1>
+               
+            </div>
+        </header>
+
+
+        <main id="main" class="pt-14 backdrop-blur-md relative snap-center py-10 align-middle h-screen w-screen mx-auto font-sans flex justify-center bg-black bg-opacity-10">
+            <div class="flex flex-col w-full sm:w-[640px]">
+                <div class="flex flex-col justify-between text-white font-mono w-full p-2 py-2 gap-3">
+                    <h2 class="text-xl opacity-70">OVERVIEW</h2>
+                    <div class="rounded-md bg-white bg-opacity-20 flex flex-col font-sans text-white px-6 py-3">
+                        <p>Canadian Computing Competition Problems we're covering or have covered. Problem PDFs are from the University of Waterloo.</p>
+                    </div>
+                    <div class="columns-2">
+                        <div class="rounded-md bg-white bg-opacity-20  text-white px-6 py-3">
+                        <a class="flex flex-row place-content-between hover:opacity-100 opacity-70 gap-2" href="https://cemc.uwaterloo.ca/resources/past-contests?grade=All&academic_year=All&contest_category=29">
+                                <h2>CCC Problem Archive</h2>
+                     
+                                <h2 class="font-icon">arrow_forward</h2>
+                        </a>
+                            
+                        </div>
+                        <div class="rounded-md bg-white bg-opacity-20  text-white px-6 py-3">
+                            <a class="flex flex-row place-content-between hover:opacity-100 opacity-70 gap-2" href="https://cccgrader.com/">
+                                <h2>CCC Online Grader</h2>
+                                
+                                <h2 class="font-icon">arrow_forward</h2>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between text-white font-mono w-full p-2 py-2 gap-3">
+                    <h2 class="text-xl opacity-70">Janurary 15, 2025 - Next Meeting</h2>
+                    <div class="rounded-md bg-white bg-opacity-20 flex flex-col text-white px-6 py-3">
+                        <h2 class="text-xl font-sans pb-3">2023 - J1</h2>
+                        <div class="font-mono flex flex-row place-content-between">
+                            <a class="hover:opacity-100 opacity-70" href="https://cemc.uwaterloo.ca/sites/default/files/documents/2023/2023CCCJrProblemSet.html">Problem (PDF)</a>
+                            <br>
+                            <a class="hover:opacity-100 opacity-70" href="/public/index.html">Solution (Coming Soon)</a>
+                        </div>
+                    </div>
+                    <div class="rounded-md bg-white bg-opacity-20 flex flex-col text-white px-6 py-3">
+                        <h2 class="text-xl font-sans pb-3">2021 - S1</h2>
+                        <div class="font-mono flex flex-row place-content-between">
+                            <a class="hover:opacity-100 opacity-70" href="https://cemc.uwaterloo.ca/sites/default/files/documents/2021/2021CCCSrProblemSet.html">Problem (PDF)</a>
+                            <br>
+                            <a class="hover:opacity-100 opacity-70" href="/public/index.html">Solution (Coming Soon)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between text-white font-mono w-full p-2 py-2 gap-3">
+                    <h2 class="text-xl opacity-70">Janurary 8, 2025 - Last Meeting</h2>
+                    <div class="rounded-md bg-white bg-opacity-20 flex flex-col text-white px-6 py-3">
+                        <h2 class="text-xl font-sans pb-3">2024 - J4</h2>
+                        <div class="font-mono flex flex-row place-content-between">
+                            <a class="hover:opacity-100 opacity-70" href="https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024CCCJrProblems.html">Problem (PDF)</a>
+                            <br>
+                            <a class="hover:opacity-100 opacity-70" href="/public/index.html">Solution (Coming Soon)</a>
+                        </div>
+                    </div>
+                    <div class="rounded-md bg-white bg-opacity-20 flex flex-col text-white px-6 py-3">
+                        <h2 class="text-xl font-sans pb-3">2023 - S2</h2>
+                        <div class="font-mono flex flex-row place-content-between">
+                            <a class="hover:opacity-100 opacity-70" href="https://cemc.uwaterloo.ca/sites/default/files/documents/2023/2023CCCSrProblemSet.html">Problem (PDF)</a>
+                            <br>
+                            <a class="hover:opacity-100 opacity-70" href="/public/index.html">Solution (Coming Soon)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
